@@ -3,30 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>PeerhiPro — loading…</title>
-<style>body{font-family:system-ui,sans-serif;text-align:center;padding:48px 16px;background:#eef7f1;color:#1f2937}p{opacity:.8}</style>
+<title>PeerhiPro</title>
 </head>
 <body>
-<p>🌳 PeerhiPro loading…</p>
-<script>
-(async () => {
-  try {
-    const parts = [];
-    for (let i = 0; i < 6; i++) {
-      const t = await fetch('part' + i + '.txt').then(r => {
-        if (!r.ok) throw new Error('missing part ' + i);
-        return r.text();
-      });
-      parts.push(t);
-    }
-    const html = parts.join('');
-    document.open();
-    document.write(html);
-    document.close();
-  } catch (e) {
-    document.body.innerHTML = '<p>Load failed: ' + e.message + '</p><p><a href="https://github.com/khan-1994/peerhipro">Open repo</a></p>';
-  }
-})();
-</script>
+<script>location.replace('https://cdn.jsdelivr.net/gh/khan-1994/peerhipro@main/app.html')</script>
+<p>Loading PeerhiPro… <a href="app.html">Open app</a></p>
 </body>
 </html>
