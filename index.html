@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PeerhiPro</title>
+<style>
+body{font-family:system-ui,sans-serif;max-width:520px;margin:40px auto;padding:16px;line-height:1.7;background:#eef7f1;color:#1f2937}
+.box{background:#fff;border:1px solid #cfe8d9;border-radius:12px;padding:20px}
+a{color:#0F9D58;font-weight:700}
+code{background:#e6f5ec;padding:2px 6px;border-radius:4px}
+</style>
+</head>
+<body>
+<div class="box">
+<h1>🌳 PeerhiPro</h1>
+<p><b>شجرہ</b> — offline family tree app</p>
+<p>GitHub Pages enable karein (Settings → Pages → Branch: <code>main</code>), phir yeh site live ho jayegi.</p>
+<p>Full app file repo mein <code>PeerhiPro.html</code> / <code>app.html</code> ke naam se add ho rahi hai.</p>
+<p><a href="https://github.com/khan-1994/peerhipro">Open repository</a></p>
+</div>
+<script>
+fetch('app.html').then(r=>{if(!r.ok)throw 0;return r.text()}).then(t=>{document.open();document.write(t);document.close()}).catch(()=>{});
+</script>
+</body>
+</html>
